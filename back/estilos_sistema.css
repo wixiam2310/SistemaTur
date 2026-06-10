@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #173248;
+    background-image:
+        linear-gradient(rgba(13, 36, 52, 0.34), rgba(13, 36, 52, 0.48)),
+        url("img/fondos/fondo-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #263238;
+    line-height: 1.45;
+    animation: fondos-turisticos 42s infinite;
+}
+
+body::before {
+    content: "Sistema Integral de Experiencia Turistica";
+    display: block;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto 22px auto;
+    padding: 14px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.94);
+    color: #14324a;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0;
+    box-shadow: 0 8px 22px rgba(13, 36, 52, 0.18);
+}
+
+h1,
+h2,
+h3 {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto 16px auto;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(13, 36, 52, 0.42);
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    margin-top: 12px;
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p,
+hr {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > p {
+    padding: 12px 16px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 4px 14px rgba(13, 36, 52, 0.12);
+}
+
+hr {
+    height: 1px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    border: none;
+    background: #dce5ef;
+}
+
+body > p,
+body > form,
+body > table,
+body > ul,
+body > ol,
+body > pre {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > form {
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 8px 24px rgba(13, 36, 52, 0.18);
+}
+
+form br {
+    line-height: 1.5;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 6px;
+    color: #425466;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    max-width: 520px;
+    margin-top: 5px;
+    border: 1px solid #c8d6e3;
+    border-radius: 6px;
+    padding: 10px 12px;
+    background: #ffffff;
+    color: #263238;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #d7e9f7;
+    border-color: #2f6f9f;
+}
+
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    display: inline-block;
+    width: auto;
+    min-width: 118px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    background: #2f6f9f;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(47, 111, 159, 0.18);
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
+    background: #255f89;
+}
+
+a {
+    color: #2f6f9f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1f3b57;
+    text-decoration: underline;
+}
+
+a button {
+    margin: 2px 0;
+}
+
+table {
+    width: 100%;
+    max-width: 1280px;
+    border-collapse: collapse;
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 8px 24px rgba(13, 36, 52, 0.18);
+    overflow: hidden;
+}
+
+th {
+    border: none;
+    border-bottom: 1px solid #d7e2ec;
+    padding: 11px;
+    background: #eaf1f8;
+    color: #1f3b57;
+    text-align: left;
+    white-space: nowrap;
+}
+
+td {
+    border: none;
+    border-bottom: 1px solid #edf2f7;
+    padding: 10px 11px;
+    vertical-align: top;
+}
+
+tr:hover td {
+    background: #f9fbfd;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+pre {
+    padding: 16px;
+    border: 1px solid #f0c6a5;
+    border-radius: 8px;
+    background: #fff6ed;
+    color: #5d3420;
+    white-space: pre-wrap;
+}
+
+.contenedor {
+    width: 94%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.panel {
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(13, 36, 52, 0.18);
+}
+
+.panel h1,
+.panel h2,
+.panel h3,
+.contenedor h1,
+.contenedor h2,
+.contenedor h3,
+form h1,
+form h2,
+form h3,
+table h1,
+table h2,
+table h3 {
+    color: #1f3b57;
+    text-shadow: none;
+}
+
+@keyframes fondos-turisticos {
+    0%, 28% {
+        background-image:
+            linear-gradient(rgba(13, 36, 52, 0.34), rgba(13, 36, 52, 0.48)),
+            url("img/fondos/fondo-1.jpg");
+    }
+
+    33%, 61% {
+        background-image:
+            linear-gradient(rgba(13, 36, 52, 0.34), rgba(13, 36, 52, 0.48)),
+            url("img/fondos/fondo-3.jpg");
+    }
+
+    66%, 100% {
+        background-image:
+            linear-gradient(rgba(13, 36, 52, 0.34), rgba(13, 36, 52, 0.48)),
+            url("img/fondos/fondo-7.webp");
+    }
+}
+
+@media (max-width: 850px) {
+    body {
+        padding: 16px;
+        background-attachment: scroll;
+    }
+
+    body::before {
+        margin-bottom: 16px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    input,
+    select,
+    textarea {
+        max-width: 100%;
+    }
+}
